@@ -53,7 +53,8 @@ module.exports = {
                 },
                 footerNavConfig: {
                     'API Reference': {
-                        href: 'https://awslabs.github.io/aws-lambda-powertools-python/api/'
+                        href: 'https://awslabs.github.io/aws-lambda-powertools-python/api/',
+                        target: '_blank'
                     },
                     Serverless: {
                         href: 'https://aws.amazon.com/serverless/'
@@ -67,7 +68,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-catch-links`,
             options: {
-                excludePattern: /(excluded-link|external)/,
+                excludePattern: /\/aws-lambda-powertools-python/,
             },
         },
         'gatsby-plugin-antd',
